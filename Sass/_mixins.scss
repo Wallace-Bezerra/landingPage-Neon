@@ -1,5 +1,21 @@
 @mixin responsive($screen-width) {
-    @media (max-width:$screen-width) {
-        @content;
-    }
+  @media (max-width: $screen-width) {
+    @content;
+  }
+}
+
+@mixin btn($padding, $bg-color, $text-color, $border, $bg-color-hover, $text-color-hover) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $padding;
+  border-radius: 122px;
+  border: $border;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+  transition:0.3s ease;
+  &:hover {
+    background-color: $bg-color-hover;
+    color: $text-color-hover;
+  }
 }

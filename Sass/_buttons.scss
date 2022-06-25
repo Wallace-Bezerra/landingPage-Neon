@@ -1,0 +1,18 @@
+.btn-primary {
+  @include btn(1.6rem 2.6rem, $brand-yellow, #855b35, none, #ffdc5c, #855b35);
+  margin-bottom: 20px;
+}
+
+.btn-secondary {
+  @include btn(1.3rem 1.8rem, transparent, $brand-blue, 1px solid #00a5f0, $brand-light-blue, $white);
+  &.white {
+    border: 1px solid $white;
+    color: $white;
+    background: $brand-blue;
+    &:hover {
+      background-color: $white;
+      color: #01c7df;
+    }
+  }
+}
+
