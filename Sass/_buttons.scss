@@ -8,11 +8,9 @@
   &.white {
     border: 1px solid $white;
     color: $white;
-    background: $brand-blue;
     &:hover {
       background-color: $white;
       color: #01c7df;
     }
   }
 }
-
