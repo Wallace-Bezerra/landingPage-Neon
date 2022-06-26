@@ -268,7 +268,7 @@
 
 .s-depoimentos {
   padding-top: 134px;
-  padding-bottom: 200px;
+  padding-bottom: 127px;
   .depoimento-text {
     display: flex;
     justify-content: space-between;
@@ -313,5 +313,89 @@
   }
   .slide-depoimentos {
     overflow-x: hidden;
+  }
+}
+
+.s-conta-digtal {
+  padding-bottom: 200px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .text {
+      margin-bottom: 45px;
+      span {
+        display: inline-block;
+        color: #c6c5cecc;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 112%;
+        letter-spacing: -1px;
+        margin-bottom: 9px;
+      }
+      h2 {
+        max-width: 542px;
+      }
+    }
+    .content {
+      li {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+        &:not(:last-child) {
+          margin-bottom: 37px;
+        }
+        .icon {
+          background: #00d7d7;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 45px;
+          height: 45px;
+          img {
+            display: inline-block;
+          }
+        }
+        .info {
+          h4 {
+            color: $gray-400;
+            margin-bottom: 4px;
+          }
+          p {
+            color: $gray-300;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+          }
+        }
+      }
+    }
+    button {
+      margin-top: 49px;
+    }
+    .ilustra-digital {
+      margin-right: -156.94px;
+      // border: 5px solid red;
+      max-width: 711px;
+      width: 100%;
+      height: 598.03px;
+      position: relative;
+      img {
+        position: absolute;
+
+        &.mockup1 {
+          right: 233px;
+          top: 0px;
+        }
+        &.mockup2 {
+          top: 78px;
+        }
+        &.circulo-digital {
+          right: 0px;
+          top: 90px;
+        }
+      }
+    }
   }
 }
