@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./Css/main.css">
     <title>Neon</title>
 </head>
@@ -69,7 +70,7 @@
             </div>
         </section>
 
-        <section class="card-neon">
+        <section class="s-card-neon">
             <div class="container">
                 <div class="left-area">
                     <div class="ilustracao-mockup">
@@ -154,6 +155,98 @@
                 </div>
             </div>
         </section>
+
+        <section class="s-depoimentos">
+            <div class="container">
+                <div class="depoimento-text">
+                    <div>
+                        <span>Prático, fácil, moderno</span>
+                        <h2>Você resolve tudo sem estresse <img src="./Img/😊.svg" alt="emoji"></h2>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="slide-depoimentos">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="card">
+                                <div class="usuario">
+                                    <strong>@marciogurka</strong>
+                                    <img src="./Img/icon-twitter.svg" alt="Icone twitter">
+                                </div>
+                                <div class="text">
+                                    <p class="p1">Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito amor por esse banco #bancoNeon</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="card">
+                                <div class="usuario">
+                                    <strong>@kleriene18</strong>
+                                    <img src="./Img/icon-twitter.svg" alt="Icone twitter">
+                                </div>
+                                <div class="text">
+                                    <p class="p1">Eu uso o Neon pra render o pouquinho que eu tenho. Como disse minha amiga Bruna, um dia eu abro o app de novo e PA: tô rica.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="card">
+                                <div class="usuario">
+                                    <strong>@mzltweet</strong>
+                                    <img src="./Img/icon-twitter.svg" alt="Icone twitter">
+                                </div>
+                                <div class="text">
+                                    <p class="p1"> Só por ter um cartão virtual com bloqueio fácil no app, já ganha e muito na segurançã pro cliente.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="card">
+                                <div class="usuario">
+                                    <strong>@mzltweet</strong>
+                                    <img src="./Img/icon-twitter.svg" alt="Icone twitter">
+                                </div>
+                                <div class="text">
+                                    <p class="p1"> Só por ter um cartão virtual com bloqueio fácil no app, já ganha e muito na segurançã pro cliente.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="card">
+                                <div class="usuario">
+                                    <strong>@mzltweet</strong>
+                                    <img src="./Img/icon-twitter.svg" alt="Icone twitter">
+                                </div>
+                                <div class="text">
+                                    <p class="p1"> Só por ter um cartão virtual com bloqueio fácil no app, já ganha e muito na segurançã pro cliente.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="card">
+                                <div class="usuario">
+                                    <strong>@mzltweet</strong>
+                                    <img src="./Img/icon-twitter.svg" alt="Icone twitter">
+                                </div>
+                                <div class="text">
+                                    <p class="p1"> Só por ter um cartão virtual com bloqueio fácil no app, já ganha e muito na segurançã pro cliente.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        
+                        
+                    </ul>
+
+                </div>
+            </div>
+        </section>
     </main>
 
 
@@ -186,7 +279,18 @@
         <button class="btn-secondary">Abra sua conta digital</button>
         <button class="btn-secondary white">Abra sua conta digital</button>
     </div> -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+        var swiper = new Swiper(".slide-depoimentos", {
+            slidesPerView: 3,
+            spaceBetween: 32,
+            pagination: {
+                el: ".s-depoimentos .container .depoimento-text .swiper-pagination",
+                clickable: true
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -89,7 +89,8 @@
     }
   }
 }
-.card-neon {
+
+.s-card-neon {
   padding-top: 10rem;
   .container {
     display: flex;
@@ -262,5 +263,55 @@
         }
       }
     }
+  }
+}
+
+.s-depoimentos {
+  padding-top: 134px;
+  padding-bottom: 200px;
+  .depoimento-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    margin-bottom: 40px;
+    span {
+      display: inline-block;
+      color: $gray-200;
+      font-family: "Poppins";
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 112%;
+      letter-spacing: -1px;
+      margin-bottom: 14px;
+    }
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      img {
+        display: inline;
+      }
+    }
+    .swiper-pagination {
+      position: static;
+      width: auto;
+      padding-bottom: 15px;
+      .swiper-pagination-bullet {
+        transition: all 0.3s ease;
+        background-color: $brand-yellow;
+        opacity: 0.5;
+        border-radius: 12px;
+        width: 8.62px;
+        &-active {
+          background-color: $brand-yellow;
+          opacity: 1;
+          width: 17.23px;
+        }
+      }
+    }
+  }
+  .slide-depoimentos {
+    overflow-x: hidden;
   }
 }
