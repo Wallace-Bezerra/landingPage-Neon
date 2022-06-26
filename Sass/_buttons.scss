@@ -1,6 +1,8 @@
 .btn-primary {
   @include btn(1.6rem 2.6rem, $brand-yellow, #855b35, none, #ffdc5c, #855b35);
-  margin-bottom: 20px;
+  &.pj {
+    padding: 16px 34px;
+  }
 }
 
 .btn-secondary {
