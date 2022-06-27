@@ -2,25 +2,31 @@
   background: url(../Img/bg-hero.svg) no-repeat center center;
   height: 78.6rem;
   padding-top: 17.5rem;
+
   .container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
     .text {
       width: 100%;
       max-width: 68.3rem;
+
       h3 {
         margin-bottom: 3.2rem;
         font-weight: 600;
         color: hsla(0, 0%, 100%, 0.8);
       }
+
       h1 {
         margin-bottom: 3.9rem;
         color: $white;
       }
+
       button {
         margin-bottom: 6.4rem;
       }
+
       ul {
         width: 100%;
         max-width: 62.1rem;
@@ -32,9 +38,11 @@
           display: flex;
           align-items: center;
           gap: 12px;
+
           p {
             color: #ffffff;
           }
+
           .bg-img {
             display: flex;
             align-items: center;
@@ -47,11 +55,13 @@
         }
       }
     }
+
     .neon {
-      margin-right: -195px;
+      margin-right: -19.5rem;
       width: 100%;
-      max-width: 706px;
-      height: 692px;
+      max-width: 70.6rem;
+      height: 69.2rem;
+
       h2 {
         text-align: center;
         font-weight: 600;
@@ -61,59 +71,175 @@
         color: rgba(255, 255, 255, 0.4);
         margin-bottom: 6.7rem;
       }
+
       .neon-image {
         display: grid;
         justify-items: center;
         width: 100%;
-        height: 541.61px;
+        height: 54.161rem;
         position: relative;
-        left: 30px;
-        top: 20px;
+        left: 3rem;
+        top: 2rem;
+
         .cartao-frente {
           position: absolute;
-          left: -68px;
-          top: 13px;
+          left: -6.8rem;
+          top: 1.3rem;
+          max-width: 43.8rem;
           z-index: 2;
         }
+
         .cartao-verso {
           position: absolute;
-          top: 143px;
-          right: 100px;
+          top: 14.3rem;
+          right: 10rem;
           z-index: 1;
+          max-width: 35.3rem;
         }
+
         .circulo-cartao {
           position: absolute;
           top: 0;
+          max-width: 55.3rem;
         }
       }
     }
   }
+
   @include responsive(1600px) {
     .container {
       .neon {
-        margin-right: -118px;
+        margin-right: -11.8rem;
       }
     }
   }
+
+  @include responsive(1440px) {
+    .container {
+      .neon {
+        margin-right: -10rem;
+
+        .neon-image {
+          max-width: 57.9rem;
+
+          .cartao-frente {
+            max-width: 38.8rem;
+            left: -2.8rem;
+          }
+
+          .cartao-verso {
+            right: 3rem;
+          }
+
+          .circulo-cartao {
+            max-width: 51.3rem;
+          }
+        }
+      }
+
+
+    }
+  }
+
+  @include responsive(1280px) {
+    .container {
+      .text {
+        h1 {
+          font-size: 5rem;
+        }
+
+        ul {
+          gap: 23px;
+          justify-content: initial;
+        }
+      }
+
+      .neon {
+        margin-right: -5rem;
+
+        .neon-image {
+          max-width: 57.9rem;
+
+          .cartao-frente {
+            max-width: 38.8rem;
+            left: -2.8rem;
+          }
+
+          .cartao-verso {
+            right: 3rem;
+          }
+
+          .circulo-cartao {
+            max-width: 51.3rem;
+          }
+        }
+      }
+
+
+    }
+  }
+
+  @include responsive(1220px) {
+    .container {
+      .text {
+        h1 {
+          font-size: 5rem;
+        }
+
+        ul {
+          gap: 23px;
+          justify-content: initial;
+        }
+      }
+
+      .neon {
+        margin-right: 2rem;
+
+        .neon-image {
+          max-width: 48.9rem;
+
+          .cartao-frente {
+            max-width: 38.8rem;
+            left: -2.8rem;
+          }
+
+          .cartao-verso {
+            right: 3rem;
+          }
+
+          .circulo-cartao {
+            max-width: 51.3rem;
+          }
+        }
+      }
+
+
+    }
+  }
+
 }
 
 .s-card-neon {
   padding-top: 10rem;
+
   .container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     // align-items: center;
     gap: 13.9rem;
+
     .left-area {
       max-width: 27.7rem;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+
       .ilustracao-mockup {
         max-width: 27.7rem;
         display: flex;
         position: relative;
+
         .ciruclo-mockup {
           max-width: 37.7rem;
           height: 42.251rem;
@@ -123,19 +249,23 @@
           z-index: -1;
         }
       }
+
       .neon-app {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         max-width: 27rem;
+
         .icone-neon {
           margin-bottom: 3.6rem;
         }
+
         .neon-text {
           h3 {
             color: $gray-600;
           }
+
           p {
             margin-bottom: 2.6rem;
             color: rgba(95, 92, 107, 0.8);
@@ -146,6 +276,7 @@
             line-height: 150%;
           }
         }
+
         ul {
           li {
             &:not(:last-child) {
@@ -153,6 +284,7 @@
             }
           }
         }
+
         &::before {
           content: "";
           background-image: url(../Img/detalhe.svg);
@@ -165,17 +297,21 @@
         }
       }
     }
+
     .right-area {
       max-width: 800px;
       width: 100%;
+
       .produtos-neon {
         margin-bottom: 144px;
+
         h2 {
           color: $gray-600;
           margin-top: 3rem;
           margin-bottom: 1.6rem;
           max-width: 48.8rem;
         }
+
         ul {
           li {
             display: flex;
@@ -183,21 +319,25 @@
             justify-content: space-between;
             padding-block: 3.4rem;
             border-bottom: 1px solid rgba(225, 224, 231, 0.9);
+
             .produtos-item {
               display: flex;
               gap: 4.3rem;
               align-items: center;
             }
+
             h3 {
               color: $gray-400;
               font-family: "Poppins", sans-serif;
               font-weight: 600;
             }
+
             p {
               color: $gray-300;
             }
           }
         }
+
         #produto {
           display: inline-block;
           margin-top: 3.2rem;
@@ -208,6 +348,7 @@
           font-size: 1.6rem;
           line-height: 112%;
           position: relative;
+
           &::after {
             content: "";
             width: 1rem;
@@ -220,6 +361,7 @@
           }
         }
       }
+
       .card-conta-pj {
         display: flex;
         position: relative;
@@ -229,10 +371,13 @@
         height: 410px;
         background: url(../Img/Banner-pj.svg) no-repeat center;
         border-radius: 12px;
+
         .content-card {
           padding-left: 59px;
+
           .text {
             max-width: 380px;
+
             h2 {
               font-family: "Poppins";
               line-height: 112%;
@@ -240,6 +385,7 @@
               color: $white;
               margin-bottom: 11px;
             }
+
             h3 {
               font-family: "Poppins";
               font-size: 24px;
@@ -248,6 +394,7 @@
               color: $white;
               margin-bottom: 8px;
             }
+
             p {
               font-weight: 400;
               font-size: 16px;
@@ -256,11 +403,13 @@
               margin-bottom: 33px;
             }
           }
+
           .btns {
             display: flex;
             gap: 16px;
           }
         }
+
         .card-pj {
           img {
             position: absolute;
@@ -276,12 +425,14 @@
 .s-depoimentos {
   padding-top: 134px;
   padding-bottom: 127px;
+
   .depoimento-text {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     position: relative;
     margin-bottom: 40px;
+
     span {
       display: inline-block;
       color: $gray-200;
@@ -292,24 +443,29 @@
       letter-spacing: -1px;
       margin-bottom: 14px;
     }
+
     h2 {
       display: flex;
       align-items: center;
       gap: 20px;
+
       img {
         display: inline;
       }
     }
+
     .swiper-pagination {
       position: static;
       width: auto;
       padding-bottom: 15px;
+
       .swiper-pagination-bullet {
         transition: all 0.3s ease;
         background-color: $brand-yellow;
         opacity: 0.5;
         border-radius: 12px;
         width: 8.62px;
+
         &-active {
           background-color: $brand-yellow;
           opacity: 1;
@@ -318,6 +474,7 @@
       }
     }
   }
+
   .slide-depoimentos {
     overflow-x: hidden;
   }
@@ -325,11 +482,14 @@
 
 .s-conta-digtal {
   padding-bottom: 200px;
+
   .container {
     display: flex;
     justify-content: space-between;
+
     .text {
       margin-bottom: 45px;
+
       span {
         display: inline-block;
         color: #c6c5cecc;
@@ -340,18 +500,22 @@
         letter-spacing: -1px;
         margin-bottom: 9px;
       }
+
       h2 {
         max-width: 542px;
       }
     }
+
     .content {
       li {
         display: flex;
         align-items: center;
         gap: 26px;
+
         &:not(:last-child) {
           margin-bottom: 37px;
         }
+
         .icon {
           background: #00d7d7;
           border-radius: 8px;
@@ -360,15 +524,18 @@
           justify-content: center;
           width: 45px;
           height: 45px;
+
           img {
             display: inline-block;
           }
         }
+
         .info {
           h4 {
             color: $gray-400;
             margin-bottom: 4px;
           }
+
           p {
             color: $gray-300;
             font-weight: 400;
@@ -378,9 +545,11 @@
         }
       }
     }
+
     button {
       margin-top: 49px;
     }
+
     .ilustra-digital {
       margin-right: -156.94px;
       // border: 5px solid red;
@@ -388,6 +557,7 @@
       width: 100%;
       height: 598.03px;
       position: relative;
+
       img {
         position: absolute;
 
@@ -395,9 +565,11 @@
           right: 233px;
           top: 0px;
         }
+
         &.mockup2 {
           top: 78px;
         }
+
         &.circulo-digital {
           right: 0px;
           top: 90px;
