@@ -1,0 +1,106 @@
+footer {
+  background-color: $brand-blue;
+  .container {
+    .top {
+      padding-block: 49px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid rgba(73, 196, 253, 0.2);
+      .share {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        span {
+          color: rgba(255, 255, 255, 0.7);
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 125%;
+        }
+        ul {
+          display: flex;
+          gap: 30px;
+          a {
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+    .main {
+      padding-top: 57px;
+      padding-bottom: 62px;
+      border-bottom: 2px solid rgba(73, 196, 253, 0.2);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      nav {
+        // border: 5px solid white;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 860px;
+        .item {
+          strong {
+            display: inline-block;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 125%;
+            color: $white;
+            margin-bottom: 25px;
+          }
+        }
+        li {
+          &:not(:last-child) {
+            margin-bottom: 29px;
+          }
+          a {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: rgba(255, 255, 255, 0.7);
+            &:hover {
+              color: $white;
+            }
+          }
+        }
+      }
+      .btns {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        button {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          padding: 17px 15px 17px 25px;
+          border-radius: 6px;
+          background: rgba(0, 164, 240, 0.23);
+          .info {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: flex-start;
+          }
+        }
+      }
+    }
+    .msg {
+      padding-top: 39px;
+      padding-bottom: 34px;
+      display: flex;
+      gap: 25px;
+      border-bottom: 4px solid #ffc800;
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: rgba(255, 255, 255, 0.8);
+        max-width: 660px;
+      }
+    }
+  }
+}

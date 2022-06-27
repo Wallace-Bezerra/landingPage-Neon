@@ -88,6 +88,13 @@
       }
     }
   }
+  @include responsive(1600px) {
+    .container {
+      .neon {
+        margin-right: -118px;
+      }
+    }
+  }
 }
 
 .s-card-neon {
