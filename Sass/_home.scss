@@ -476,6 +476,22 @@
       }
     }
   }
+  @include responsive(1333px) {
+    .container {
+      gap: 0px;
+      .left-area {
+        .ilustracao-mockup {
+          .ciruclo-mockup {
+            display: none;
+          }
+          .mockup-iphone {
+            width: 255.03px;
+            height: 541.69px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .s-depoimentos {
