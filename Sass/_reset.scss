@@ -12,7 +12,7 @@
 :root {
   font-size: 62.5%;
 
-  @include responsive(1220px) {
+  @include responsive(1280px) {
     font-size: 55%;
   }
 }

@@ -1,7 +1,7 @@
 const menu = document.querySelector('header');
 const botaoMenu = document.querySelector('.btn-secondary');
 const logo = document.querySelector("header .logo img");
-console.log(logo);
+
 
 
 function mudarMenu(event) {

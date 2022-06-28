@@ -1,5 +1,6 @@
 .s-hero {
   background: url(../Img/bg-hero.svg) no-repeat center center;
+  background-size: cover;
   height: 78.6rem;
   padding-top: 17.5rem;
 
@@ -136,8 +137,6 @@
           }
         }
       }
-
-
     }
   }
 
@@ -156,67 +155,115 @@
 
       .neon {
         margin-right: -5rem;
-
-        .neon-image {
-          max-width: 57.9rem;
-
-          .cartao-frente {
-            max-width: 38.8rem;
-            left: -2.8rem;
-          }
-
-          .cartao-verso {
-            right: 3rem;
-          }
-
-          .circulo-cartao {
-            max-width: 51.3rem;
-          }
-        }
       }
-
-
     }
   }
+  @include responsive(1160px) {
+    height: 100.1rem;
+    padding-top: 15rem;
+    .container {
+      flex-direction: column;
+      align-items: center;
+      .text {
+        text-align: center;
+        h3 {
+          margin-bottom: 2.4rem;
+        }
+        h1 {
+          margin-bottom: 2.6rem;
+        }
+        button {
+          margin-bottom: 3.9rem;
+        }
+        ul {
+          li {
+            gap: 10px;
+          }
+          max-width: 588px;
+          gap: 55px;
+          margin: 0 auto;
+          margin-bottom: 50px;
+        }
+      }
+      .neon {
+        flex-direction: column;
+        align-items: center;
 
-  @include responsive(1220px) {
+        h2 {
+          margin-bottom: 19px;
+          font-size: 40px;
+        }
+        .neon-image {
+          top: -2rem;
+          left: 5rem;
+        }
+      }
+    }
+  }
+  @include responsive(640px) {
+    padding-top: 12.5rem;
+    height: 742px;
     .container {
       .text {
-        h1 {
-          font-size: 5rem;
+        h3 {
+          font-size: 16px;
+          margin-bottom: 15px;
         }
-
+        h1 {
+          font-size: 32px;
+          margin: 0 auto;
+          margin-bottom: 37px;
+          max-width: 500px;
+        }
         ul {
-          gap: 23px;
-          justify-content: initial;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 15px;
+          max-width: 300px;
+          margin-bottom: 51px;
+          li {
+            .bg-img {
+              background: transparent;
+              // width: 1.8rem;
+              height: 1.4rem;
+            }
+            p {
+              font-size: 18px;
+              br {
+                display: none;
+              }
+            }
+          }
         }
       }
-
       .neon {
-        margin-right: 2rem;
-
+        h2 {
+          display: none;
+        }
         .neon-image {
-          max-width: 48.9rem;
-
+          top: 0;
+          left: 0;
+          margin: 0 auto;
+          max-width: 317.99px;
+          max-height: 271.03px;
+          // max-width: 317px;
           .cartao-frente {
-            max-width: 38.8rem;
-            left: -2.8rem;
+            width: 211.89px;
           }
 
           .cartao-verso {
-            right: 3rem;
+            width: 185.64px;
+            right: 4rem;
+            top: 11.3rem;
           }
 
           .circulo-cartao {
-            max-width: 51.3rem;
+            width: 267.36px;
           }
         }
       }
-
-
     }
   }
-
 }
 
 .s-card-neon {

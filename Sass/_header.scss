@@ -5,7 +5,7 @@ header {
   border-bottom: 2px solid hsla(0, 0%, 100%, 0.2);
   width: 100%;
   background-color: transparent;
-  background-color: $brand-blue;
+  // background-color: $brand-blue;
   height: 8.8rem;
   display: flex;
   align-items: center;
@@ -92,13 +92,14 @@ header {
         .btn-mobile {
           display: block;
           margin-right: 6px;
-          
         }
       }
     }
   }
+  @include responsive(660px) {
+    height: 72px;
+  }
   @include responsive(480px) {
-    height: 77px;
     .container {
       nav {
         button {
