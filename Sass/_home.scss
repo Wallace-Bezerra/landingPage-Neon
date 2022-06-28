@@ -264,6 +264,15 @@
       }
     }
   }
+  @include responsive(460px) {
+    .container {
+      .text {
+        h1 {
+          max-width: 321px;
+        }
+      }
+    }
+  }
 }
 
 .s-card-neon {
