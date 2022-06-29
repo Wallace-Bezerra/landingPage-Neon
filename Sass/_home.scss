@@ -393,7 +393,7 @@
           li {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            // justify-content: space-between;
             padding-block: 3.4rem;
             border-bottom: 1px solid rgba(225, 224, 231, 0.9);
 
@@ -411,6 +411,9 @@
 
             p {
               color: $gray-300;
+            }
+            a {
+              padding-left: 30px;
             }
           }
         }
@@ -522,7 +525,6 @@
       .right-area {
         .produtos-neon {
           margin-left: 100px;
-
         }
       }
     }
@@ -549,7 +551,9 @@
 
       .right-area {
         .produtos-neon {
-          margin-left: 0px;
+          margin-top: 1.6rem;
+          margin-bottom: 0rem;
+          margin-left: 0rem;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -562,8 +566,12 @@
           ul {
             li {
               width: 100%;
-              margin-left: 43px;
             }
+          }
+          #produto {
+            margin-top: 4rem;
+            margin-bottom: 5.7rem;
+            font-size: 1.8rem;
           }
         }
 
@@ -586,14 +594,54 @@
             }
           }
         }
-
-
       }
     }
-
   }
 
-  @include responsive(940px) {}
+  @include responsive(860px) {
+    .container {
+      .right-area {
+        .produtos-neon {
+          ul {
+            li {
+              .produtos-item {
+                align-items: flex-start;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive(560px) {
+    padding-top: 6rem;
+
+    .container {
+      .right-area {
+        .produtos-neon {
+          h2 {
+            font-size: 28px;
+          }
+          p {
+            font-size: 14px;
+          }
+          ul {
+            li {
+              .produtos-item {
+                gap: 23px;
+              }
+              h3 {
+                font-size: 20px;
+              }
+            }
+          }
+          #produto {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .s-depoimentos {
