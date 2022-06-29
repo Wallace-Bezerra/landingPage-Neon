@@ -672,7 +672,50 @@ header .container nav .btn-mobile {
     margin-left: 100px;
   }
 }
-
+@media (max-width: 1190px) {
+  .s-card-neon .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .s-card-neon .container .left-area {
+    flex-direction: row;
+    gap: 80px;
+    max-width: 610px;
+    align-items: center;
+    padding-top: 93px;
+  }
+  .s-card-neon .container .left-area .neon-app::before {
+    display: none;
+  }
+  .s-card-neon .container .right-area .produtos-neon {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .s-card-neon .container .right-area .produtos-neon h2 {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .s-card-neon .container .right-area .produtos-neon ul li {
+    width: 100%;
+    margin-left: 43px;
+  }
+  .s-card-neon .container .right-area .card-conta-pj {
+    background-position: right;
+    max-width: 688px;
+    margin: 0 auto;
+  }
+  .s-card-neon .container .right-area .card-conta-pj .content-card {
+    padding-left: 50px;
+    max-width: 382px;
+  }
+  .s-card-neon .container .right-area .card-conta-pj .card-pj img {
+    max-width: 329px;
+    right: -23.61px;
+    top: 106.1px;
+  }
+}
 .s-depoimentos {
   padding-top: 134px;
   padding-bottom: 127px;

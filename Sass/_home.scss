@@ -527,6 +527,73 @@
       }
     }
   }
+
+  @include responsive(1190px) {
+    .container {
+      flex-direction: column-reverse;
+      align-items: center;
+
+      .left-area {
+        flex-direction: row;
+        gap: 80px;
+        max-width: 610px;
+        align-items: center;
+        padding-top: 93px;
+
+        .neon-app {
+          &::before {
+            display: none;
+          }
+        }
+      }
+
+      .right-area {
+        .produtos-neon {
+          margin-left: 0px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          h2 {
+            margin: 0 auto;
+            text-align: center;
+          }
+
+          ul {
+            li {
+              width: 100%;
+              margin-left: 43px;
+            }
+          }
+        }
+
+        .card-conta-pj {
+          background-position: right;
+          // background-size: contain;
+          max-width: 688px;
+          margin: 0 auto;
+
+          .content-card {
+            padding-left: 50px;
+            max-width: 382px;
+          }
+
+          .card-pj {
+            img {
+              max-width: 329px;
+              right: -23.61px;
+              top: 106.1px;
+            }
+          }
+        }
+
+
+      }
+    }
+
+  }
+
+  @include responsive(940px) {}
 }
 
 .s-depoimentos {
