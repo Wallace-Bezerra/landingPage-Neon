@@ -412,6 +412,7 @@
             p {
               color: $gray-300;
             }
+
             a {
               padding-left: 30px;
             }
@@ -568,6 +569,7 @@
               width: 100%;
             }
           }
+
           #produto {
             margin-top: 4rem;
             margin-bottom: 5.7rem;
@@ -577,7 +579,6 @@
 
         .card-conta-pj {
           background-position: right;
-          // background-size: contain;
           max-width: 688px;
           margin: 0 auto;
 
@@ -600,6 +601,12 @@
 
   @include responsive(860px) {
     .container {
+      .left-area {
+        flex-direction: column-reverse;
+        gap: 40px;
+        padding-top: 100px;
+      }
+
       .right-area {
         .produtos-neon {
           ul {
@@ -610,9 +617,63 @@
             }
           }
         }
+
+        .card-conta-pj {
+          background: url("../Img/img-mobile.png") no-repeat center;
+          width: 336px;
+          height: 470px;
+          flex-direction: column;
+
+          .content-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 281px;
+            padding-left: 0;
+            margin-top: 43px;
+
+            .text {
+              text-align: center;
+
+              h2 {
+                font-size: 28px;
+              }
+
+              h3 {
+                font-size: 20px;
+              }
+
+              p {
+                font-size: 16px;
+                max-width: 253px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+              }
+            }
+
+            .btns {
+              .btn-primary {
+                &.pj {
+                  padding: 11px 34px;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+
+          .card-pj {
+            img {
+              width: 277.06px;
+              right: 18.39px;
+              top: 339.1px;
+
+            }
+          }
+        }
       }
     }
   }
+
   @include responsive(560px) {
     padding-top: 6rem;
 
@@ -622,19 +683,23 @@
           h2 {
             font-size: 28px;
           }
+
           p {
             font-size: 14px;
           }
+
           ul {
             li {
               .produtos-item {
                 gap: 23px;
               }
+
               h3 {
                 font-size: 20px;
               }
             }
           }
+
           #produto {
             font-size: 18px;
           }
@@ -648,57 +713,79 @@
   padding-top: 134px;
   padding-bottom: 127px;
 
-  .depoimento-text {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    position: relative;
-    margin-bottom: 40px;
-
-    span {
-      display: inline-block;
-      color: $gray-200;
-      font-family: "Poppins";
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 112%;
-      letter-spacing: -1px;
-      margin-bottom: 14px;
-    }
-
-    h2 {
+  .container {
+    .depoimento-text {
       display: flex;
-      align-items: center;
-      gap: 20px;
+      justify-content: space-between;
+      align-items: flex-end;
+      position: relative;
+      margin-bottom: 40px;
 
-      img {
-        display: inline;
+      span {
+        display: inline-block;
+        color: $gray-200;
+        font-family: "Poppins";
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 112%;
+        letter-spacing: -1px;
+        margin-bottom: 14px;
       }
-    }
 
-    .swiper-pagination {
-      position: static;
-      width: auto;
-      padding-bottom: 15px;
+      h2 {
+        display: flex;
+        align-items: center;
+        gap: 20px;
 
-      .swiper-pagination-bullet {
-        transition: all 0.3s ease;
-        background-color: $brand-yellow;
-        opacity: 0.5;
-        border-radius: 12px;
-        width: 8.62px;
+        img {
+          display: inline;
+        }
+      }
 
-        &-active {
+      .swiper-pagination {
+        position: static;
+        width: auto;
+        padding-bottom: 15px;
+
+        .swiper-pagination-bullet {
+          transition: all 0.3s ease;
           background-color: $brand-yellow;
-          opacity: 1;
-          width: 17.23px;
+          opacity: 0.5;
+          border-radius: 12px;
+          width: 8.62px;
+
+          &-active {
+            background-color: $brand-yellow;
+            opacity: 1;
+            width: 17.23px;
+          }
         }
       }
     }
+
+    .slide-depoimentos {
+      overflow-x: hidden;
+    }
   }
 
-  .slide-depoimentos {
-    overflow-x: hidden;
+
+  @include responsive(1140px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .depoimento-text {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 51px;
+      }
+
+      .slide-depoimentos {
+        max-width: 740px;
+      }
+    }
   }
 }
 
@@ -796,6 +883,34 @@
           right: 0px;
           top: 90px;
         }
+      }
+    }
+  }
+
+  @include responsive(1280px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 78px;
+
+      .conta-content {
+        text-align: center;
+
+        .content {
+          text-align: start;
+        }
+      }
+
+      .ilustra-digital {
+        margin: 0 auto;
+
+        img {
+          &.circulo-digital {
+            width: 100%;
+            top: 0px;
+          }
+        }
+
       }
     }
   }

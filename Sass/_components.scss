@@ -5,10 +5,12 @@
   height: 20.9rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 2.1rem;
+  padding-top: 3.7rem;
   padding-left: 3.2rem;
   padding-right: 3.2rem;
+  padding-bottom: 23px;
   border-radius: 0.8rem;
 
   .usuario {
