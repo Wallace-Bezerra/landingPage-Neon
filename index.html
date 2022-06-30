@@ -484,7 +484,22 @@
             spaceBetween: 32,
             pagination: {
                 el: ".s-depoimentos .container .depoimento-text .swiper-pagination",
-                clickable: true
+                clickable: true,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.3,
+                    spaceBetween: 16,
+                },
+                500: {
+                    slidesPerView: 2.3,
+                    spaceBetween: 16,
+                },
+                900: {
+                    slidesPerView: 3.3,
+                    spaceBetween: 32,
+                }
+
             }
         });
     </script>

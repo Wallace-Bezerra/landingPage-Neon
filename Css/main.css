@@ -36,7 +36,7 @@ button {
   background: hsla(252deg, 20%, 95%, 0.8);
   max-width: 38.4rem;
   width: 100%;
-  height: 20.9rem;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -846,7 +846,7 @@ header .container nav .btn-mobile {
   width: 17.23px;
 }
 .s-depoimentos .container .slide-depoimentos {
-  overflow-x: hidden;
+  width: 100%;
 }
 @media (max-width: 1140px) {
   .s-depoimentos .container {
@@ -863,13 +863,18 @@ header .container nav .btn-mobile {
   .s-depoimentos .container .depoimento-text h2 img {
     display: none;
   }
-  .s-depoimentos .container .slide-depoimentos {
-    max-width: 740px;
-  }
 }
 @media (max-width: 860px) {
   .s-depoimentos {
     padding-top: 76px;
+  }
+}
+@media (max-width: 860px) {
+  .s-depoimentos .container {
+    padding: 0;
+  }
+  .s-depoimentos .container .slide-depoimentos {
+    padding-inline: 20px;
   }
 }
 
