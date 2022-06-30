@@ -605,8 +605,14 @@
         flex-direction: column-reverse;
         gap: 40px;
         padding-top: 100px;
-      }
 
+        .ilustracao-mockup {
+          height: 397px;
+          overflow-y: hidden;
+
+
+        }
+      }
       .right-area {
         .produtos-neon {
           ul {
@@ -709,6 +715,9 @@
   }
 }
 
+
+
+
 .s-depoimentos {
   padding-top: 134px;
   padding-bottom: 127px;
@@ -780,12 +789,23 @@
         flex-direction: column;
         align-items: center;
         gap: 51px;
+
+        h2 {
+          img {
+            display: none;
+          }
+        }
       }
 
       .slide-depoimentos {
         max-width: 740px;
       }
     }
+  }
+
+  @include responsive(860px) {
+    padding-top: 76px;
+
   }
 }
 
@@ -903,14 +923,68 @@
 
       .ilustra-digital {
         margin: 0 auto;
+        max-width: 580px;
 
         img {
           &.circulo-digital {
             width: 100%;
             top: 0px;
+            transform: rotate(200deg);
+          }
+
+          &.mockup1 {
+            right: 51px;
+            z-index: 4;
+          }
+
+          &.mockup2 {
+            left: 52px;
+            z-index: 4;
           }
         }
 
+      }
+    }
+  }
+
+  @include responsive(600px) {
+    .container {
+      .conta-content {
+        .content {
+          max-width: 500px;
+          margin: 0 auto;
+
+          li {
+            flex-direction: column;
+            text-align: center;
+          }
+
+        }
+      }
+
+      .ilustra-digital {
+        max-width: 357px;
+        height: 469px;
+
+        img {
+          &.mockup1 {
+            width: 168.36px;
+            top: 0px;
+            right: 0px;
+          }
+
+          &.mockup2 {
+            width: 168.36px;
+            left: 0;
+            top: 58px;
+          }
+
+          &.circulo-digital {
+            top: initial;
+            bottom: 0px;
+            transform: rotate(150deg);
+          }
+        }
       }
     }
   }
