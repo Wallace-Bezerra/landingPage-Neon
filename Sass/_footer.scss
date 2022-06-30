@@ -103,4 +103,32 @@ footer {
       }
     }
   }
+  @include responsive(1280px) {
+    .container {
+      .main {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        .btns {
+          flex-direction: row;
+        }
+        nav {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  @include responsive(900px) {
+    .container {
+      .main {
+        align-items: flex-end;
+        nav {
+          flex-wrap: wrap;
+        }
+        .btns {
+          flex-direction: column;
+        }
+      }
+    }
+  }
 }

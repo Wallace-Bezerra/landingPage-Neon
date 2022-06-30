@@ -609,8 +609,6 @@
         .ilustracao-mockup {
           height: 397px;
           overflow-y: hidden;
-
-
         }
       }
 
@@ -673,7 +671,6 @@
               width: 277.06px;
               right: 18.39px;
               top: 339.1px;
-
             }
           }
         }
@@ -715,9 +712,6 @@
     }
   }
 }
-
-
-
 
 .s-depoimentos {
   padding-top: 134px;
@@ -780,7 +774,6 @@
     }
   }
 
-
   @include responsive(1140px) {
     .container {
       display: flex;
@@ -808,7 +801,6 @@
 
   @include responsive(860px) {
     padding-top: 76px;
-
   }
 
   @include responsive(860px) {
@@ -819,7 +811,6 @@
         padding-inline: 20px;
       }
     }
-
   }
 }
 
@@ -922,6 +913,7 @@
   }
 
   @include responsive(1280px) {
+    padding-bottom: 70px;
     .container {
       flex-direction: column;
       align-items: center;
@@ -956,7 +948,6 @@
             z-index: 4;
           }
         }
-
       }
     }
   }
@@ -972,7 +963,6 @@
             flex-direction: column;
             text-align: center;
           }
-
         }
       }
 
