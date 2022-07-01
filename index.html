@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta title="O melhor banco digital do Brasil!">
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <meta name="title" content="Banco Neon">
+    <meta name="description" content="O melhor banco digital do brasil">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./Css/main.css">
-    <title>Neon</title>
+    <title>Banco Neon</title>
 </head>
 
 <body>
@@ -33,12 +35,9 @@
                 <button class="btn-secondary white">Abra sua conta digital</button>
                 <div class="btn-mobile">
                     <svg width="31" height="25" viewBox="0 0 31 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2 2H29" stroke="white" stroke-width="2.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M2 12.5H29" stroke="white" stroke-width="2.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M10 23.5L29 23.5" stroke="white" stroke-width="2.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
+                        <path d="M2 2H29" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M2 12.5H29" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M10 23.5L29 23.5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </div>
             </nav>
@@ -89,10 +88,8 @@
             <div class="container">
                 <div class="left-area">
                     <div class="ilustracao-mockup">
-                        <img class="ciruclo-mockup" data-aos="fade-left" data-aos-duration="1000"
-                            src="./Img/Circulo-mockup.svg" alt="circulo mockup">
-                        <img class="mockup-iphone" data-aos="flip-left" data-aos-duration="1000"
-                            src="./Img/mockup-iphone-01.svg" alt="mockup iphone">
+                        <img class="ciruclo-mockup" data-aos="fade-left" data-aos-duration="1000" src="./Img/Circulo-mockup.svg" alt="circulo mockup">
+                        <img class="mockup-iphone" data-aos="flip-left" data-aos-duration="1000" src="./Img/mockup-iphone-01.svg" alt="mockup iphone">
                     </div>
                     <div class="neon-app" data-aos="fade-up" data-aos-duration="1000">
                         <div class="icone-neon">
@@ -188,7 +185,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
 
-                <div class="slide-depoimentos">
+                <div class="slide-depoimentos" data-aos="fade-up" data-aos-duration="1000">
                     <ul class="swiper-wrapper">
                         <li class="swiper-slide">
                             <div class="card">
@@ -276,7 +273,7 @@
             </div>
         </section>
 
-        <section class="s-conta-digtal">
+        <section class="s-conta-digtal" data-aos="fade-up" data-aos-duration="1000">
             <div class="container">
                 <div class="conta-content">
                     <div class="text">
@@ -317,12 +314,12 @@
                     <button class="btn-primary">Abra sua conta digital</button>
                 </div>
                 <div class="ilustra-digital">
-                    <img class="mockup1" src="./img/mockup-teste-digital01.svg" alt="">
-                    <img class="mockup2" src="./img/mockup-digital-2.svg" alt="">
+                    <img class="mockup1" src="./img/mockup-teste-digital01.svg" data-aos="fade-down" data-aos-duration="1000" alt="">
+                    <img class="mockup2" src="./img/mockup-digital-2.svg" data-aos="fade-up" data-aos-duration="1000" alt="">
                     <img class="circulo-digital" src="./img/circulo-digital.svg" alt="">
                 </div>
             </div>
-        </section> -->
+        </section>
     </main>
 
     <footer>
@@ -450,9 +447,6 @@
         </div>
     </footer>
 
-
-
-
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/script.js"></script>
@@ -484,7 +478,9 @@
 
             }
         });
-        AOS.init();
+        AOS.init({
+            once: true
+        });
     </script>
 </body>
 
