@@ -292,13 +292,13 @@ header .container nav .btn-mobile {
   width: 100%;
   max-width: 62.1rem;
   display: flex;
-  gap: 59px;
+  gap: 5.9rem;
   justify-content: space-between;
 }
 .s-hero .container .text ul li {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 1.2rem;
 }
 .s-hero .container .text ul li p {
   color: #ffffff;
@@ -321,8 +321,8 @@ header .container nav .btn-mobile {
 .s-hero .container .neon h2 {
   text-align: center;
   font-weight: 600;
-  font-size: 56px;
-  line-height: 84px;
+  font-size: 5.6rem;
+  line-height: 8.4rem;
   letter-spacing: -2px;
   color: rgba(255, 255, 255, 0.4);
   margin-bottom: 6.7rem;
@@ -383,7 +383,7 @@ header .container nav .btn-mobile {
     font-size: 5rem;
   }
   .s-hero .container .text ul {
-    gap: 23px;
+    gap: 2.3rem;
     justify-content: initial;
   }
   .s-hero .container .neon {
@@ -412,21 +412,21 @@ header .container nav .btn-mobile {
     margin-bottom: 3.9rem;
   }
   .s-hero .container .text ul {
-    max-width: 588px;
-    gap: 55px;
+    max-width: 58.8rem;
+    gap: 5.5rem;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
   }
   .s-hero .container .text ul li {
-    gap: 10px;
+    gap: 1rem;
   }
   .s-hero .container .neon {
     flex-direction: column;
     align-items: center;
   }
   .s-hero .container .neon h2 {
-    margin-bottom: 19px;
-    font-size: 40px;
+    margin-bottom: 1.9rem;
+    font-size: 4rem;
   }
   .s-hero .container .neon .neon-image {
     top: -2rem;
@@ -436,31 +436,31 @@ header .container nav .btn-mobile {
 @media (max-width: 640px) {
   .s-hero {
     padding-top: 12.5rem;
-    height: 742px;
+    height: 74.2rem;
   }
   .s-hero .container .text h3 {
-    font-size: 16px;
-    margin-bottom: 15px;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
   }
   .s-hero .container .text h1 {
-    font-size: 32px;
+    font-size: 3.2rem;
     margin: 0 auto;
-    margin-bottom: 37px;
-    max-width: 500px;
+    margin-bottom: 3.7rem;
+    max-width: 50rem;
   }
   .s-hero .container .text ul {
     flex-direction: column;
     align-items: flex-start;
-    gap: 15px;
-    max-width: 300px;
-    margin-bottom: 51px;
+    gap: 1.5rem;
+    max-width: 30rem;
+    margin-bottom: 5.1rem;
   }
   .s-hero .container .text ul li .bg-img {
     background: transparent;
     height: 1.4rem;
   }
   .s-hero .container .text ul li p {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
   .s-hero .container .text ul li p br {
     display: none;
@@ -472,11 +472,11 @@ header .container nav .btn-mobile {
     top: 0;
     left: 0;
     margin: 0 auto;
-    max-width: 317.99px;
-    max-height: 271.03px;
+    max-width: 31.799rem;
+    max-height: 27.103rem;
   }
   .s-hero .container .neon .neon-image .cartao-frente {
-    width: 211.89px;
+    width: 21.189rem;
   }
   .s-hero .container .neon .neon-image .cartao-verso {
     width: 185.64px;
@@ -484,12 +484,12 @@ header .container nav .btn-mobile {
     top: 11.3rem;
   }
   .s-hero .container .neon .neon-image .circulo-cartao {
-    width: 267.36px;
+    width: 26.736rem;
   }
 }
 @media (max-width: 460px) {
   .s-hero .container .text h1 {
-    max-width: 321px;
+    max-width: 32.1rem;
   }
 }
 
