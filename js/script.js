@@ -9,12 +9,12 @@ function mudarMenu(event) {
   if (scrollY > 0) {
     botaoMenu.classList.remove('white');
     menu.classList.add('fixed');
-    logo.src = "../img/logo-neon-color.svg";
+    logo.src = "./img/logo-neon-color.svg";
   }
   else {
     botaoMenu.classList.add('white');
     menu.classList.remove('fixed');
-    logo.src = "../img/logo-neon-white.svg";
+    logo.src = "./img/logo-neon-white.svg";
   }
 
 }

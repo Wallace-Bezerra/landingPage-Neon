@@ -186,9 +186,8 @@
           li {
             gap: 1rem;
           }
-
-          max-width: 58.8rem;
-          gap: 5.5rem;
+          max-width: 86.8rem;
+          gap: 6.5rem;
           margin: 0 auto;
           margin-bottom: 5rem;
         }
@@ -233,7 +232,7 @@
           flex-direction: column;
           align-items: flex-start;
           gap: 1.5rem;
-          max-width: 30rem;
+          max-width: 31rem;
           margin-bottom: 5.1rem;
 
           li {
@@ -245,6 +244,7 @@
 
             p {
               font-size: 1.8rem;
+              text-align: start;
 
               br {
                 display: none;
@@ -668,8 +668,8 @@
 
           .card-pj {
             img {
-              width: 277.06px;
-              right: 18.39px;
+              width: 290.06px;
+              right: 16.39px;
               top: 339.1px;
             }
           }
@@ -684,6 +684,7 @@
     .container {
       .right-area {
         .produtos-neon {
+          margin-top: 6.6rem;
           h2 {
             font-size: 28px;
           }
