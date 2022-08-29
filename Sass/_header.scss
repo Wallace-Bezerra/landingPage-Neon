@@ -5,7 +5,6 @@ header {
   border-bottom: 2px solid hsla(0, 0%, 100%, 0.2);
   width: 100%;
   background-color: transparent;
-  // background-color: $brand-blue;
   height: 8.8rem;
   display: flex;
   align-items: center;
@@ -44,6 +43,7 @@ header {
       }
     }
     nav {
+      position: relative;
       display: flex;
       align-items: center;
       column-gap: 60px;
@@ -66,6 +66,82 @@ header {
       }
       .btn-mobile {
         display: none;
+      }
+      .dropdown {
+        // display: none;
+        // height: 0px;
+        // transition: all 0.5s;
+        position: absolute;
+        top: 52px;
+        left: -156px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+        filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+        border-radius: 6px;
+        width: 373px;
+        height: 0;
+        transition: all 0.4s;
+        // pointer-events: none;
+        opacity: 0;
+        overflow: hidden;
+
+        &::after {
+          content: "";
+          width: 293px;
+          height: 5px;
+          position: absolute;
+          bottom: 0px;
+          background: #ffc800;
+          border-radius: 10px 10px 0 0;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 28px;
+          li {
+            cursor: pointer;
+            &:hover strong {
+              color: #0073ce;
+            }
+            strong {
+              color: #5f5c6b;
+              font-family: "Poppins", sans-serif;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 19px;
+              display: inline-block;
+              margin-bottom: 4px;
+              transition: color 0.4s;
+            }
+            p {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 150%;
+              color: #8c8a97;
+            }
+          }
+        }
+      }
+    }
+    .dropdown {
+      &.ativo {
+        height: 423.15px;
+        opacity: 1;
+        // overflow: visible;
+        &::before {
+          content: "";
+          position: absolute;
+          top: -5px;
+          left: calc(186.5px - 5.7px);
+          width: 11.43px;
+          height: 11.43px;
+          background-color: #fff;
+          display: block;
+          transform: rotate(45deg);
+        }
       }
     }
   }

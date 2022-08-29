@@ -18,6 +18,24 @@ function mudarMenu(event) {
   }
 
 }
-
 window.addEventListener('scroll', mudarMenu)
-// console.log(menu);
+
+const produto = document.querySelector("[href='#produtos']");
+const dropdown = document.querySelector(".dropdown");
+
+
+produto.addEventListener('click', activeDropdown);
+dropdown.addEventListener('mouseleave', activeDropdown);
+function activeDropdown(event) {
+  event.preventDefault();
+  if (dropdown.classList.contains("ativo")) {
+    dropdown.classList.remove("ativo");
+    dropdown.style.overflow = "hidden";
+  }
+  else {
+    dropdown.classList.add("ativo");
+    setTimeout(() => {
+      dropdown.style.overflow = "visible";
+    }, 200);
+  }
+}
