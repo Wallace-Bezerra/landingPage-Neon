@@ -9,15 +9,18 @@ header {
   display: flex;
   align-items: center;
   transition: all 0.3s;
+
   &.fixed {
     background-color: #f8f8fb;
+    box-shadow: 0 0 1px black;
+
     .container {
       nav {
         ul {
           li {
             a {
               color: $gray-400;
-              font-weight: 600;
+
               &:hover {
                 color: $brand-yellow;
               }
@@ -25,6 +28,7 @@ header {
           }
         }
       }
+
       svg {
         path {
           stroke: $brand-blue;
@@ -32,41 +36,98 @@ header {
       }
     }
   }
+
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     .logo {
       img {
         width: 100%;
         max-width: 13.164rem;
       }
     }
+
     nav {
       position: relative;
       display: flex;
       align-items: center;
       column-gap: 60px;
-      ul {
+
+      .menu {
         display: flex;
         column-gap: 4.8rem;
+
         li {
           a {
             color: white;
             font-family: "Poppins";
-            font-weight: 500;
+            font-weight: 600;
             font-size: 1.6rem;
             line-height: 125%;
             transition: color 0.3s ease;
+
             &:hover {
               color: rgb(255, 232, 27);
             }
           }
         }
       }
+
       .btn-mobile {
         display: none;
+        position: relative;
+        cursor: pointer;
       }
+
+      .overlay-mobile {
+        background-color: #0303035e;
+        width: 102vw;
+        height: 102vh;
+        position: absolute;
+        top: -21px;
+        right: -19px;
+        pointer-events: none;
+        transition: all .3s;
+        opacity: 0;
+
+        .menu-mobile {
+          background-color: #fff;
+          position: absolute;
+          z-index: 99999;
+          top: -3px;
+          left: 0;
+          transition: all .5s;
+          padding: 35px 30px;
+          height: 103vh;
+          width: 300px;
+          transform: translateX(-100%);
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          .logo-mobile {
+            img {
+              margin-bottom: 40px;
+              width: 140px;
+            }
+          }
+        }
+      }
+
+      .overlay-mobile {
+        &.ativo {
+          opacity: 1;
+          pointer-events: all;
+
+          .menu-mobile {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+      }
+
       .dropdown {
         // display: none;
         // height: 0px;
@@ -97,15 +158,19 @@ header {
           background: #ffc800;
           border-radius: 10px 10px 0 0;
         }
+
         ul {
           display: flex;
           flex-direction: column;
           gap: 28px;
+
           li {
             cursor: pointer;
+
             &:hover strong {
               color: #0073ce;
             }
+
             strong {
               color: #5f5c6b;
               font-family: "Poppins", sans-serif;
@@ -116,6 +181,7 @@ header {
               margin-bottom: 4px;
               transition: color 0.4s;
             }
+
             p {
               font-weight: 400;
               font-size: 14px;
@@ -126,10 +192,12 @@ header {
         }
       }
     }
+
     .dropdown {
       &.ativo {
         height: 423.15px;
         opacity: 1;
+
         // overflow: visible;
         &::before {
           content: "";
@@ -150,21 +218,25 @@ header {
     .container {
       nav {
         gap: 30px;
-        ul {
+
+        .menu {
           gap: 30px;
         }
       }
     }
   }
+
   @include responsive(940px) {
     .container {
       .logo {
         max-width: 108px;
       }
+
       nav {
-        ul {
+        .menu {
           display: none;
         }
+
         .btn-mobile {
           display: block;
           margin-right: 6px;
@@ -172,9 +244,11 @@ header {
       }
     }
   }
+
   @include responsive(660px) {
     height: 72px;
   }
+
   @include responsive(480px) {
     .container {
       nav {
