@@ -2,19 +2,17 @@ const menu = document.querySelector('header');
 const botaoMenu = document.querySelector('.btn-secondary');
 const logo = document.querySelector("header .logo img");
 
-
-
 function mudarMenu(event) {
   console.log(event.currentTarget);
   if (scrollY > 80) {
     botaoMenu.classList.remove('white');
     menu.classList.add('fixed');
-    logo.src = "./img/logo-neon-color.svg";
+    logo.src = "./Img/logo-neon-color.svg";
   }
   else {
     botaoMenu.classList.add('white');
     menu.classList.remove('fixed');
-    logo.src = "./img/logo-neon-white.svg";
+    logo.src = "./Img/logo-neon-white.svg";
   }
 
 }
@@ -23,7 +21,7 @@ window.addEventListener('scroll', mudarMenu)
 const produto = document.querySelector("[href='#produtos']");
 const dropdown = document.querySelector(".dropdown");
 
-//dripdown
+//dropdown
 produto.addEventListener('click', activeDropdown);
 dropdown.addEventListener('mouseleave', activeDropdown);
 function activeDropdown(event) {
@@ -58,8 +56,3 @@ overlayMobile.addEventListener('click', (event) => {
     overlayMobile.classList.remove("ativo");
   }
 });
-
-// function ativarOverlay2() {
-//   overlayMobile.classList.toggle("ativo");
-//   console.log("overr2");
-// }
