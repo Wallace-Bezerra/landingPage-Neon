@@ -42,9 +42,9 @@ function activeDropdown(event) {
 
 const menuMobile = document.querySelector(".btn-mobile");
 const overlayMobile = document.querySelector(".overlay-mobile");
+const teste = document.querySelector(".menu-mobile");
 
-
-menuMobile.addEventListener("click", ativarOverlay);
+menuMobile.addEventListener("click", ativarOverlay,);
 
 function ativarOverlay() {
   overlayMobile.classList.toggle("ativo");
@@ -52,7 +52,19 @@ function ativarOverlay() {
 }
 
 overlayMobile.addEventListener('click', (event) => {
-  if (event.target === event.currentTarget) {
-    overlayMobile.classList.remove("ativo");
-  }
+  // if (event.target === event.currentTarget) {
+  //   overlayMobile.classList.remove("ativo");
+  // }
+  // event.stopPropagation();
+  // event.preventDefault();
+  overlayMobile.classList.remove("ativo");
+  console.log("overlay teste");
+}, {
+  capture: false
 });
+
+teste.addEventListener("click", (event) => {
+  event.stopPropagation();
+  // console.log(event);
+  console.log("menu-mobile");
+})
